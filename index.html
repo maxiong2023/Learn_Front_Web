@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>
+        1. 上传代码到Github
+   - 在Github上新建库
+   - 配置SSH-key，在Git Bash上键入命令，ssh-keygen -t rsa -C "mayaxiong@haisum.com"，可以获取SSH-key
+   - 配置本地Git仓库的远程仓库--Github，git remote add origin `Github仓库的URL`
+   - 推送本地仓库到Github，git push origin master
+     - 保存GIthub密码到本地计算机Git的缓存内
+       - git config --global credential.helper cache ，默认15分钟
+       - git config --global credential.helper 'cache -timeout=3600' ，任意设置时间s，示例为1h
+       - git config --global credential.helper store ，长期保存密码
+2. 克隆GIthub仓库到本地
+   - git clone `Github仓库的URL`
+    </p>
+</body>
+</html>
